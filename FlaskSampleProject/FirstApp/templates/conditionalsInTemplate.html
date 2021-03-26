@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% extends 'index.html' %}
+    {% block content %}
+
+    {% if username %}
+        Welcome to our World, {{username }} !!! <br><br>
+        << Username is provided in render_template() >> <br><br>
+        << Replace username with 'None' to alter result >> <br><br><br><br>
+    {% else %}
+        Welcome to our World !!! <br><br>
+        << Username is not provided in render_template() >> <br><br>
+        << Replace 'None' with username to alter result >> <br><br><br><br>
+    {% endif %}
+
+    {% endblock %}
+
+</body>
+</html>

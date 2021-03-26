@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+
+    1. <a href="/">Simple Routing Rule</a> ('/') <br><br>
+    2. <a href="/user/Ram/">Variable Routing Rule</a> ('/user/< username >/') <br><br>
+    3. <a href="/user/Ram/123">Variable Part Converters</a> ('/user/< username >/< int:course >/') <br><br>
+    4. <a href="/error/">Redirecting a URL</a> ('/error/') <br><br>
+    5. <a href="/welcome/user/Ram">Generating Dynamic URLs</a> ('/welcome/user/< username >) <br><br>
+    6. <a href="/template">Creating Your First Template</a> ('/template/') <br><br>
+    7. <a href="/template/conditionalsInTemplate">Conditionals in Template</a> ('/template/conditionalsInTemplate') <br><br>
+    8. <a href="/template/loopsInTemplate">Loops in Template</a> ('/template/loopsInTemplate') <br><br>
+    9. <a href="/template/TemplateInheritance">Template Inheritance</a> ('/template/TemplateInheritance') <br><br>
+
+</body>
+</html>
